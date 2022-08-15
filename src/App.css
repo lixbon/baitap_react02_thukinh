@@ -1,38 +1,55 @@
 .App {
   text-align: center;
+  background: url(../public/glassesImage/background.jpg);
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.model-thukinh {
+  height: 500px;
+  width: 400px;
+  border: 1px solid red;
+  background-image: url(../public/glassesImage/model.jpg);
+  position: relative;
+  background-position: center top;
+  background-size: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.model-container {
+  padding: 0 100px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.show-kinh {
+  width: 100%;
+  background-color: white;
+}
+.show-kinh .kinh {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: max-content;
+}
+.show-kinh .kinh img {
+  width: 40%;
+}
+#kinh-duoc-chon {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 200px;
+  height: 70px;
+  opacity: 0.9;
+}
+.vglasses__info {
+  position: absolute;
+  text-align: left;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
   color: white;
+  padding: 10px;
+  display: none;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vglasses__info div p {
+  font-size: 24px;
 }
